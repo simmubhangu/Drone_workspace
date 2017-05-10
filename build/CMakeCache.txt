@@ -928,9 +928,6 @@ SDFormat_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/sdformat
 //Enable debian style python package layout
 SETUPTOOLS_DEB_LAYOUT:BOOL=ON
 
-//subversion command line client
-Subversion_SVN_EXECUTABLE:FILEPATH=/usr/bin/svn
-
 //LSB Distrib tag
 UBUNTU:BOOL=TRUE
 
@@ -950,18 +947,6 @@ actionlib_DIR:PATH=/opt/ros/indigo/share/actionlib/cmake
 actionlib_msgs_DIR:PATH=/opt/ros/indigo/share/actionlib_msgs/cmake
 
 //Value Computed by CMake
-ar_pose_BINARY_DIR:STATIC=/home/simmu/drone_ws/build/ar_tools/ar_pose
-
-//Value Computed by CMake
-ar_pose_SOURCE_DIR:STATIC=/home/simmu/drone_ws/src/ar_tools/ar_pose
-
-//Value Computed by CMake
-ar_tools_BINARY_DIR:STATIC=/home/simmu/drone_ws/build/ar_tools/ar_tools
-
-//Value Computed by CMake
-ar_tools_SOURCE_DIR:STATIC=/home/simmu/drone_ws/src/ar_tools/ar_tools
-
-//Value Computed by CMake
 ardrone_autonomy_BINARY_DIR:STATIC=/home/simmu/drone_ws/build/ardrone_autonomy
 
 //The directory containing a CMake configuration file for ardrone_autonomy.
@@ -969,15 +954,6 @@ ardrone_autonomy_DIR:PATH=/home/simmu/drone_ws/devel/share/ardrone_autonomy/cmak
 
 //Value Computed by CMake
 ardrone_autonomy_SOURCE_DIR:STATIC=/home/simmu/drone_ws/src/ardrone_autonomy
-
-//Value Computed by CMake
-artoolkit_BINARY_DIR:STATIC=/home/simmu/drone_ws/build/ar_tools/artoolkit
-
-//The directory containing a CMake configuration file for artoolkit.
-artoolkit_DIR:PATH=/home/simmu/drone_ws/devel/share/artoolkit/cmake
-
-//Value Computed by CMake
-artoolkit_SOURCE_DIR:STATIC=/home/simmu/drone_ws/src/ar_tools/artoolkit
 
 //The directory containing a CMake configuration file for camera_info_manager.
 camera_info_manager_DIR:PATH=/home/simmu/Documents/catkin_ws/devel/share/camera_info_manager/cmake
@@ -1119,7 +1095,7 @@ kdl_conversions_DIR:PATH=/opt/ros/indigo/share/kdl_conversions/cmake
 kdl_parser_DIR:PATH=/opt/ros/indigo/share/kdl_parser/cmake
 
 //Path to a library.
-lib:FILEPATH=/opt/ros/indigo/lib/libinteractive_markers.so
+lib:FILEPATH=/opt/ros/indigo/lib/libdynamic_reconfigure_config_init_mutex.so
 
 //The directory containing a CMake configuration file for message_filters.
 message_filters_DIR:PATH=/opt/ros/indigo/share/message_filters/cmake
@@ -1207,9 +1183,6 @@ random_numbers_DIR:PATH=/opt/ros/indigo/share/random_numbers/cmake
 
 //Dependencies for target
 reset_plugin_LIB_DEPENDS:STATIC=
-
-//The directory containing a CMake configuration file for resource_retriever.
-resource_retriever_DIR:PATH=/opt/ros/indigo/share/resource_retriever/cmake
 
 //The directory containing a CMake configuration file for rosconsole.
 rosconsole_DIR:PATH=/opt/ros/indigo/share/rosconsole/cmake
@@ -1446,7 +1419,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=19
+CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=13
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -1501,8 +1474,6 @@ FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v0.26()]
 FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/usr/bin/python][v2.7.6()]
 //Details about finding Qt4
 FIND_PACKAGE_MESSAGE_DETAILS_Qt4:INTERNAL=[/usr/bin/qmake][/usr/lib/x86_64-linux-gnu/qt4/bin/moc][/usr/lib/x86_64-linux-gnu/qt4/bin/rcc][/usr/lib/x86_64-linux-gnu/qt4/bin/uic][/usr/include/qt4][/usr/lib/x86_64-linux-gnu][/usr/lib/x86_64-linux-gnu/libQtCore.so][v4.8.6()]
-//Details about finding Subversion
-FIND_PACKAGE_MESSAGE_DETAILS_Subversion:INTERNAL=[/usr/bin/svn][v1.8.8()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //ADVANCED property for variable: GIT_EXECUTABLE
@@ -2002,8 +1973,6 @@ Q_WS_QWS:INTERNAL=
 Q_WS_WIN:INTERNAL=
 //Have symbol Q_WS_X11
 Q_WS_X11:INTERNAL=1
-//ADVANCED property for variable: Subversion_SVN_EXECUTABLE
-Subversion_SVN_EXECUTABLE-ADVANCED:INTERNAL=1
 //Components requested for this build tree.
 _Boost_COMPONENTS_SEARCHED:INTERNAL=date_time;filesystem;system;thread
 //Last used Boost_INCLUDE_DIR value.

@@ -128,7 +128,6 @@ IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   INCLUDE("/home/simmu/drone_ws/build/tum_simulator/message_to_tf/cmake_install.cmake")
   INCLUDE("/home/simmu/drone_ws/build/ethzasl_ptam/ptam/cmake_install.cmake")
   INCLUDE("/home/simmu/drone_ws/build/tum_ardrone/cmake_install.cmake")
-  INCLUDE("/home/simmu/drone_ws/build/moveit_tutorials/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 
