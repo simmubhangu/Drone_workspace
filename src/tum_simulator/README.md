@@ -47,3 +47,7 @@ How to run a simulation:
     ```
     roslaunch cvg_sim_gazebo ardrone_testworld.launch
     ```
+2. Run the RViz along with simulator:
+    ```
+    roslaunch cvg_sim_gazebo ardrone_testworld.launch
+    ```
