@@ -1,9 +1,0 @@
-<launch>
-    <node name="ptam" pkg="ptam" type="ptam" clear_params="true" output="screen">
-	    <remap from="image" to="$(optenv IMAGE /camera/image_raw)" />
-        <remap from="pose" to="pose"/>
-	<remap from="/camera/image_raw" to ="/ardrone/front/image_mono"/>
-	    <rosparam file="$(find ptam)/PtamFixParams.yaml"/>
-    </node>
-</launch>
-
