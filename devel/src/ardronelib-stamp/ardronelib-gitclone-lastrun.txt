@@ -1,0 +1,3 @@
+repository='https://github.com/AutonomyLab/ardronelib.git'
+module=''
+tag=''
